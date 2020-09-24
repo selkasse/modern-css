@@ -308,6 +308,67 @@ select {
   --footerBackground: var(--darkGrey);
 }
 
+.oled {
+  --black: #000;
+  --cardBg: var(--darkGrey);
+  --headerBackground: var(--darkGrey);
+  --footerBackground: var(--darkGrey);
+}
+
+
+.theme {
+  /** Define colors as colors */
+  --brown: #55423d;
+  --darkBrown: #271c19;
+  --white: #fff3ec;
+  --cream: #fff3ec;
+  --orange: #ffc0ad;
+  --purple: #9656a1;
+  --pink: #e78fb3;
+
+  /** Define colors intentions */
+  --primary: var(--orange);
+  --danger: var(--pink);
+  --background: var(--darkBrown);
+  --textColor: var(--white);
+  --buttonTextColor: var(--blue);
+  --lineColor: var(--darkBrown);
+  --cardBg: var(--brown);
+  --headerBackground: var(--brown);
+  --footerBackground: var(--brown);
+
+  /** Styles */
+  --line: solid 1px var(--lineColor);
+
+  /** Type */
+  --headingFont: "Space Mono", monospace;
+  --bodyFont: "Work Sans", sans-serif;
+  --baseFontSize: 112.5%;
+  --h1: 3.052em;
+  --h2: 2.441em;
+  --h3: 1.953em;
+  --h4: 1.563em;
+  --h5: 1.25em;
+  --smallText: 0.8em;
+
+  /** Elevation */
+  --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --level-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /** Positioning */
+  /*? You can think of the 2.5% padding as 95% width */
+  --containerPadding: 2.5%;
+  --headerHeight: 3rem;
+  --borderRadius: 10px;
+}
+
+
+
 @media only screen and (min-width: 500px) {
   :root {
     --baseFontSize: 112.5%;
