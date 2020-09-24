@@ -9,6 +9,7 @@
   --darkBlue: #00214d;
   --grey: #bfbfbf;
   --lightGrey: #f2f4f6;
+  --white: white;
 
   /** Define colors intentions */
   --primary: var(--green);
@@ -16,6 +17,7 @@
   --background: var(--lightGrey);
   --textColor: var(--black);
   --lineColor: var(--grey);
+  --cardBg: var(--white);
 
   /** Styles */
   --line: solid 1px var(--lineColor);
@@ -44,6 +46,7 @@
   /*? You can think of the 2.5% padding as 95% width */
   --containerPadding: 2.5%;
   --headerHeight: 3rem;
+  --borderRadius: 10px;
 }
 
 /*? From type-scale.com *********************************/
@@ -121,7 +124,7 @@ small,
 blockquote {
   margin: 10px;
   padding: 2em;
-  background: white;
+  background: var(--cardBg);
   box-shadow: var(--level-3);
 }
 
@@ -268,6 +271,24 @@ select {
 
 .flex-around {
   --justifyContent: space-around;
+}
+
+.card {
+  padding: 2em;
+  background: var(--cardBg);
+  box-shadow: var(--level-3);
+  border-radius: var(--borderRadius);
+}
+
+/** Anything that is an immediate descendant of card */
+/*? First item will never have margin-top */
+.card > *:first-child {
+  margin-top: 0;
+}
+
+/*? Last item will never have margin-bottom */
+.card > *:last-child {
+  margin-top: 0;
 }
 
 @media only screen and (min-width: 500px) {
