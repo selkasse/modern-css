@@ -1,29 +1,40 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-
+    
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
-
+    
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/style.css" />
-
+    
     <meta name="theme-color" content="#fafafa" />
+    <title>Modern CSS Design Systems</title>
   </head>
 
   <body>
     <!-- Add your site or application content here -->
+    <header>
+      <h1 class="fake-logo">Fake Logo</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main class="layout">
+
     <h1>Hello World</h1>
     <p>
       Brooklyn franzen poutine, PBR&B cliche cred blog thundercats fashion axe
@@ -50,27 +61,44 @@
     <h5>Hello World</h5>
     <h6>Hello World</h6>
     <hr />
+    
+    <div class="grid">
+      <p>
+        Intelligentsia health goth typewriter, vexillologist gastropub beard tbh
+        PBR&B paleo sartorial pok pok small batch kale chips salvia kinfolk. Etsy
+        pickled drinking vinegar distillery poutine shabby chic. Palo santo
+        microdosing plaid truffaut unicorn, kombucha bicycle rights lumbersexual
+        vexillologist prism literally DIY. Edison bulb bushwick vexillologist XOXO
+        asymmetrical 8-bit.
+      </p>
+    
+      <ul>
+        <li>Hi</li>
+        <li>Hello</li>
+        <li>It's me</li>
+      </ul>
+    </div>
 
-    <p>
-      Intelligentsia health goth typewriter, vexillologist gastropub beard tbh
-      PBR&B paleo sartorial pok pok small batch kale chips salvia kinfolk. Etsy
-      pickled drinking vinegar distillery poutine shabby chic. Palo santo
-      microdosing plaid truffaut unicorn, kombucha bicycle rights lumbersexual
-      vexillologist prism literally DIY. Edison bulb bushwick vexillologist XOXO
-      asymmetrical 8-bit.
-    </p>
     <hr />
-
-    <ul>
-      <li>Hi</li>
-      <li>Hello</li>
-      <li>It's me</li>
-    </ul>
-
+    
     <form>
-      <div><label for="text" >Text</label><input type="text" placeholder="Sharif Elkassed" /></div>
-      <div><label for="number">Number</label><input type="number" /></div>
-      <div><label for="email">Email</label><input type="email" /></div>
+      <div class="grid cols-3">
+
+        <div>
+          <label for="text" >Text</label>
+          <input type="text" placeholder="Sharif Elkassed" />
+        </div>
+
+        <div>
+          <label for="number">Number</label>
+          <input type="number" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" />
+        </div>
+      </div>
+
       <div>
         <label id="textarea" for="textarea">Textarea</label
         ><textarea type="textarea" />Default value
@@ -86,8 +114,18 @@
         </select>
       </div>
       <button type="submit">Submit</button>
-      <button type="submit">Cancel</button>
+      <button class="cancel">Cancel</button>
+      <button disabled>Disabled</button>
+      <button type="submit">Button with long text</button>
+      <button type="submit">Button &xrarr;</button>
+      <br />
+      <button class="small">Small</button>
+
+
+
     </form>
+
+    </main>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
@@ -106,5 +144,6 @@
       ga("send", "pageview");
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
+  
   </body>
 </html>
